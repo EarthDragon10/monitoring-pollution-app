@@ -28,7 +28,7 @@
 
 # Description
 
-### Appointments: A List of Appointments Removable by the user using the useState hook.
+### Pollution App: Realize an app that allows you to get information regarding the quality of life of cities through the use of the external service Teleport.
 
 # Technologies
 
