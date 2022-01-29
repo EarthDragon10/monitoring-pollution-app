@@ -4,7 +4,7 @@
   "description": "JavaScript Advanced project of Start2impact",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack server --mode=development",
+    "dev": "webpack serve --mode=development",
     "build": "webpack --mode=production",
     "build:dev": "webpack --mode=development"
   },
@@ -19,13 +19,9 @@
   },
   "homepage": "https://github.com/EarthDragon10/monitoring-pollution-app#readme",
   "devDependencies": {
-    "@babel/core": "^7.16.12",
-    "@babel/preset-env": "^7.16.11",
-    "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
-    "sass": "^1.49.0",
-    "sass-loader": "^12.4.0",
+    "img-optimize-loader": "^1.0.7",
     "style-loader": "^3.3.1",
     "webpack": "^5.67.0",
     "webpack-cli": "^4.9.2",

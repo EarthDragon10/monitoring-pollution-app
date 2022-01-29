@@ -1,8 +1,3 @@
-// import Note from "./note.js";
-// import "../css/style.scss";
+import logoFn from "./logo";
 
-// const nota1 = new Note();
-
-class Test {}
-
-const t1 = new Test();
+document.body.appendChild(logoFn());

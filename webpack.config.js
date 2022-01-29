@@ -7,25 +7,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(css|s[ac]ss)$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.js$/i,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          },
-        },
-      },
-    ],
+    filename: "[name].bundle.js",
+    clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -33,11 +16,28 @@ module.exports = {
       template: "./src/index.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(jpe?g|png|svg|webp)$/i,
+        use: {
+          loader: "img-optimize-loader",
+          options: {
+            compress: {
+              mode: "low",
+            },
+          },
+        },
+      },
+    ],
+  },
   devServer: {
+    static: path.resolve(__dirname, "dist"),
     port: 500,
     open: true,
-    static: path.resolve(__dirname, "dist"),
   },
-  //   mode: "development",
-  // mode: "production",
 };
