@@ -1,0 +1,11 @@
+$bg: coral;
+$color-text: white;
+
+body {
+  background: $bg;
+  color: $color-text;
+
+  h1 {
+    text-decoration: underline;
+  }
+}
