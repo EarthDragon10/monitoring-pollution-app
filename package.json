@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/EarthDragon10/monitoring-pollution-app#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "img-optimize-loader": "^1.0.7",
